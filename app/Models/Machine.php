@@ -15,6 +15,9 @@ class Machine extends Model
 {
     use HasFactory;
 
+    public const FREE_STATUS = 0;
+    public const WASHING_STATUS = 1;
+
     protected $fillable = ['dorm_id','code','status'];
 
     public function reserves(): HasMany

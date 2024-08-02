@@ -71,5 +71,32 @@ class WashingMachineController extends Controller
         return response()->json($buckets);
     }
 
+    public function turnOn($code)
+    {
+        $data = [
+            'machineCode' => null,
+            'endTime' => null,
+            'status' => 0
+        ];
+        $now = Carbon::now()->timezone("Asia/Tehran");
+        $reserve = Reserve::query()
+            ->where('receiptID', $code)
+            ->where('start_at', '<', $now)
+            ->where('end_at', '>', $now)
+            ->get()->first();
+
+        if ($reserve) {
+            $reserve->update(['status' => Reserve::WASHING_STATUS]);
+            $machine = $reserve->machine;
+            $machine->update(['status' => Machine::WASHING_STATUS]);
+
+            $data['machineCode'] = $machine->code;
+            $data['endTime'] = $reserve->end_at;
+            $data['status'] = 1;
+
+        }
+        return response()->json($data);
+    }
+
 
 }
