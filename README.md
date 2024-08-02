@@ -2,7 +2,7 @@
 # Washing Machine Reservation System
 
 This project aims to create a web-based reservation system for managing washing machines in dormitories.
-<img title="a title" alt="Alt text" src="images/1712137388512.jpg">
+<img title="a title" alt="Alt text" src="images/1712137388512.jpg" style="max-width: 50%;">
 
 ## Features
 
@@ -35,9 +35,9 @@ Composer Install
 2. Place the Python code inside the directory located in the `Device Code` folder.
 
 ## Screenshots
-<img title="a title" alt="Alt text" src="images/1712137390186.jpg">
-<img title="a title" alt="Alt text" src="images/1712137391801.jpeg">
-<img title="a title" alt="Alt text" src="images/1712137404142.jpg">
-<img title="a title" alt="Alt text" src="images/1712137388175.jpg">
+<img title="a title" alt="Alt text" src="images/1712137390186.jpg" style="max-width: 50%;">
+<img title="a title" alt="Alt text" src="images/1712137391801.jpeg" style="max-width: 50%;">
+<img title="a title" alt="Alt text" src="images/1712137404142.jpg" style="max-width: 50%;">
+<img title="a title" alt="Alt text" src="images/1712137388175.jpg" style="max-width: 50%;">
 
 
