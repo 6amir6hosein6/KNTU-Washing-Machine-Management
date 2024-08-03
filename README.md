@@ -1,5 +1,5 @@
 
-# Washing Machine Reservation System
+# LaundryMate: A Web-Based Washing Machine Reservation System
 
 This project aims to create a web-based reservation system for managing washing machines in dormitories.
 <img title="a title" alt="Alt text" src="images/1712137388512.jpg" style="max-width: 50%;">
